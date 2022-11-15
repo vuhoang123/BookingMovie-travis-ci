@@ -1,0 +1,12 @@
+.ant-carousel .slick-dots-bottom {
+  width: inherit !important;
+}
+
+.slick-dots li button {
+  height: 4px !important;
+  border-radius: 3px;
+}
+
+.slick-dots li button:before {
+  display: none;
+}

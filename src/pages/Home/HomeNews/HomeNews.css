@@ -1,0 +1,29 @@
+.HomeNews .ant-tabs-ink-bar {
+  background: #ea580c !important;
+}
+
+.HomeNews .ant-tabs-nav-list .ant-tabs-tab span:active {
+  display: block;
+  color: #ea580c !important;
+}
+
+.HomeNews .ant-tabs-tab-btn:focus {
+  color: #ea580c !important;
+}
+
+.HomeNews .ant-tabs-tab:hover {
+  color: #ea580c !important;
+  display: block;
+  transition: all 0.3s;
+  transform: scale(1.2);
+}
+
+.HomeNews .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #ea580c !important;
+}
+
+.HomeNews .btn_seemore:hover {
+  transition: all 0.3s;
+  background: #ea580c;
+  color: #fff !important;
+}

@@ -1,0 +1,14 @@
+.homeIntroduce {
+  background-image: url("../../../assets/thumnail/backapp.jpg");
+  width: 100%;
+  height: 700px;
+}
+
+.ant-row {
+  margin-right: 0 !important;
+}
+
+.homeIntroduce .btn_download {
+  background-color: #ea580c;
+  color: #fff;
+}

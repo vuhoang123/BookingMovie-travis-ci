@@ -1,0 +1,48 @@
+.film__card-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.film__card:hover .film__card-overlay {
+  transition: ease 0.6s;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.film__card:hover .film__card-hover {
+  transition: ease 0.6s;
+  transform: scale(1.05);
+}
+
+.film__card-playicon {
+  font-size: 60px;
+  color: #fff;
+}
+
+.film__card-playicon:hover {
+  fill: #ea580c;
+}
+
+.film__card-btn {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 6px, rgba(0, 0, 0, 0.15) 0px 1px 6px;
+  transition: 0.4s all;
+}
+
+.film__card-btn:hover {
+  transition: ease 0.3s;
+  background-color: #d35e1f;
+}
+
+.film__card-btn:active {
+  transform: scale(0.9);
+}
+
+.film__card-btn:hover .film__card-booking {
+  color: #fff;
+}

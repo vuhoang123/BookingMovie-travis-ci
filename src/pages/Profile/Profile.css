@@ -1,0 +1,8 @@
+.profile {
+  background: #fdc830;
+  background: -webkit-linear-gradient(to right, #f37335, #fdc830);
+  background: linear-gradient(to right, #f37335, #fdc830);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}

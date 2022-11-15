@@ -1,0 +1,37 @@
+.Detail .ant-tabs-ink-bar {
+  background: #ea580c !important;
+}
+
+.Detail .ant-tabs-nav-list .ant-tabs-tab span:active {
+  display: block;
+  color: #ea580c !important;
+}
+
+.Detail .ant-tabs-tab-btn:focus {
+  color: #ea580c !important;
+}
+
+.Detail .ant-tabs-tab:hover {
+  color: #ea580c !important;
+  display: block;
+  transition: all 0.3s;
+  transform: scale(1.2);
+}
+
+.Detail .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #ea580c !important;
+}
+
+.Detail .film__card-playicon {
+  transition: all 0.3s;
+  font-size: 70px;
+  color: rgb(149, 149, 149);
+}
+
+.Detail .film__card-playicon:hover {
+  color: rgb(220, 220, 220);
+}
+
+.ant-modal-footer {
+  display: none !important;
+}
