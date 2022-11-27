@@ -1,11 +1,9 @@
 language: node_js
-node_js:
-  - "stable"
-cache:
-  directories:
-    - node_modules
-before_script:
-  - npm install
-script:
-  - npm start
-  - npm run build
+notifications:
+  email: true
+node_js: 16
+jobs:
+  include:
+    - stage: test
+      script:
+        - npm run build
