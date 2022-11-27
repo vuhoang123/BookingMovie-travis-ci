@@ -1,3 +1,5 @@
+import { CustomCard } from "@tsamantanis/react-glassmorphism";
+import "@tsamantanis/react-glassmorphism/dist/index.css";
 import { Modal } from "antd";
 import React, { useEffect, useState } from "react";
 
@@ -56,7 +58,7 @@ export default function Detail(props) {
       }}
     >
       <div className="overlay absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
-      <div
+      <CustomCard
         className="min-h-screen"
         effectColor="#000" // required
         // color="#fff" // default color is white
@@ -245,7 +247,7 @@ export default function Detail(props) {
             </TabPane>
           </Tabs>
         </div>
-      </div>
+      </CustomCard>
     </div>
   );
 }
