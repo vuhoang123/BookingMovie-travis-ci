@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import "./Loading.css";
 
 export default function Loading(props) {
-  const { isLoading } = useSelector((state) => state.LoadingReducer);
+  const { isLoading } = useSelector((state) => state?.LoadingReducer);
 
   return (
     <Fragment>

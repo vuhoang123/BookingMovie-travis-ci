@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import Film from "../Film/Film";
 
 import styleSlick from "./MultipleRowSlick.module.css";
@@ -85,7 +85,7 @@ const MultipleRowSlick = (props) => {
           PHIM SẮP CHIẾU
         </button>
       </div> */}
-      <Slider {...settings}>{renderFilms()}</Slider>
+      {/* <Slider {...settings}>{renderFilms()}</Slider> */}
     </div>
   );
 };

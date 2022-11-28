@@ -2,7 +2,6 @@ import { createBrowserHistory } from "history";
 import { Router, Switch } from "react-router-dom";
 import "./App.css";
 import { AuthRoute } from "./components/Guard/Guard";
-import Loading from "./components/Loading/Loading";
 import Checkout from "./pages/Checkout/Checkout";
 import Detail from "./pages/Detail/Detail";
 import Home from "./pages/Home/Home";
@@ -22,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <Router history={history}>
-        <Loading />
+        {/* <Loading /> */}
         <Switch>
           <HomeTemplate path="/home" exact Component={Home} />
           <HomeTemplate path="/detail/:id" exact Component={Detail} />
@@ -32,8 +31,12 @@ function App() {
           <HomeTemplate path="/profile" exact Component={Profile} />
 
           <AuthRoute path="/login" exact component={Login} redirectPath="/" />
-          <AuthRoute path="/register" exact component={Register} redirectPath="/" />
-
+          <AuthRoute
+            path="/register"
+            exact
+            component={Register}
+            redirectPath="/"
+          />
           <HomeTemplate path="/" exact Component={Home} />
         </Switch>
       </Router>

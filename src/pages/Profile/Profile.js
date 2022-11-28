@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getInfoUserBookingTicketsAction } from "../../store/actions/UserManagerActions";
 import "./Profile.css";
 
-export default function Profile() {
+export default function Profile(props) {
   const dispatch = useDispatch();
   const { infoUser } = useSelector((state) => state.UserManagerReducer);
 
@@ -39,10 +39,18 @@ export default function Profile() {
                       className="block"
                     />
                   </div>
-                  <p className="leading-relaxed font-semibold text-lg mt-3">User name: {infoUser.taiKhoan}</p>
-                  <p className="leading-relaxed font-semibold text-lg">Full name: {infoUser.hoTen}</p>
-                  <p className="leading-relaxed font-semibold text-lg">Phone: {infoUser.soDT}</p>
-                  <p className="leading-relaxed font-semibold text-lg">Email: {infoUser.email}</p>
+                  <p className="leading-relaxed font-semibold text-lg mt-3">
+                    User name: {infoUser.taiKhoan}
+                  </p>
+                  <p className="leading-relaxed font-semibold text-lg">
+                    Full name: {infoUser.hoTen}
+                  </p>
+                  <p className="leading-relaxed font-semibold text-lg">
+                    Phone: {infoUser.soDT}
+                  </p>
+                  <p className="leading-relaxed font-semibold text-lg">
+                    Email: {infoUser.email}
+                  </p>
                   <p className="leading-relaxed font-semibold text-lg">
                     User type: {infoUser.loaiNguoiDung?.tenLoai}
                   </p>
@@ -70,9 +78,12 @@ export default function Profile() {
                               />
 
                               <span className="flex-grow flex flex-col pl-4">
-                                <span className="title-font font-medium text-gray-900">{item.tenPhim}</span>
+                                <span className="title-font font-medium text-gray-900">
+                                  {item.tenPhim}
+                                </span>
                                 <span className="text-gray-500 text-sm">
-                                  Booking Date: {moment(item.ngayDat).format("DD-MM-YYYY")}
+                                  Booking Date:{" "}
+                                  {moment(item.ngayDat).format("DD-MM-YYYY")}
                                 </span>
                               </span>
                             </div>
